@@ -15,7 +15,7 @@ A continuación, se detallan los pasos que deberás seguir:
 Conecta tu aplicación a la API proporcionada para obtener datos actualizados sobre las criptomonedas en tiempo real.
 Asegúrate de manejar adecuadamente las solicitudes a la API y gestionar posibles errores.
 
-2 . Presentación de datos en una tabla:
+2. Presentación de datos en una tabla:
 Diseña una interfaz que presente la información de las 10 criptomonedas más importantes de manera clara y organizada.
 Muestra detalles relevantes, como el nombre, símbolo, precio actual y cambios recientes.
 
