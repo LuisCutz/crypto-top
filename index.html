@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Top</title>
+    <link rel="stylesheet" href="/assetss/css/normalize.css" />
+    <link rel="stylesheet" href="/assetss/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assetss/img/crypto-top-fi.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- LOGO -->
+      <picture>
+        <img src="/assetss/img/logo.png" alt="Logo Crypto Top" />
+      </picture>
+
+      <div class="nav-bar">
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <svg
+              id="darkModeToggle"
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#000000"
+            >
+              <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q10 0 20.5.67 10.5.66 24.17 2-37.67 31-59.17 77.83T444-660q0 90 63 153t153 63q53 0 99.67-20.5 46.66-20.5 77.66-56.17 1.34 12.34 2 21.84.67 9.5.67 18.83 0 150-105 255T480-120Zm0-66.67q102 0 179.33-61.16Q736.67-309 760.67-395.67q-23.34 9-49.11 13.67-25.78 4.67-51.56 4.67-117.46 0-200.06-82.61-82.61-82.6-82.61-200.06 0-22.67 4.34-47.67 4.33-25 14.66-55-91.33 28.67-150.5 107-59.16 78.34-59.16 175.67 0 122 85.66 207.67Q358-186.67 480-186.67Zm-6-288Z"
+              />
+            </svg>
+            <svg
+              id="lightModeToggle"
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+              />
+            </svg>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="text__container">
+        <p>
+          Descubre las principales criptomonedas del mercado, destacadas por su
+          relevancia y capitalización. Se ofrece una visión general de sus
+          precios actuales y variaciones recientes, proporcionando un análisis
+          conciso de las monedas digitales más influyentes en el panorama
+          financiero actual.
+        </p>
+      </div>
+      <h1>Top 10 criptomonedas más importantes:</h1>
+      <div class="container">
+        <table class="container__table">
+          <thead>
+            <tr>
+              <th>Logo</th>
+              <th>Nombre</th>
+              <th>Simbolo</th>
+              <th>Precio (USD)</th>
+              <th>% 24h</th>
+              <th>Market Cap</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <p class="credits">
+        Los datos presentados han sido obtenidos a través de la API de
+        <a
+          href="https://www.coingecko.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >CoinGecko</a
+        >
+      </p>
+      <p class="credits">
+        &copy 2024 Luis Daniel Cutz Martinez. Todos los derechos reservados.
+      </p>
+      <div class="links">
+        <a
+          href="https://github.com/luiscutz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/luis-daniel-cutz-martinez"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path
+              d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script src="/api/crypto_api.js"></script>
+    <script src="/assetss/js/dark-mode.js"></script>
+  </body>
+</html>
+<!-- LOGO
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg279849" viewBox="0 0 1024 768" height="768px" width="1024px" version="1.1">
+    <metadata id="metadata279855">
+      <rdf:rdf>
+        <cc:work rdf:about="">
+          <dc:format>image/svg+xml</dc:format>
+          <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+        </cc:work>
+      </rdf:rdf>
+    </metadata>
+    <defs id="defs279853"></defs>
+    <linearGradient spreadMethod="pad" y2="30%" x2="-10%" y1="120%" x1="30%" id="3d_gradient2-logo-e63b7e86-b177-47f3-a90e-62fe9c05eff8">
+      <stop id="stop279830" stop-opacity="1" stop-color="#ffffff" offset="0%"></stop>
+      <stop id="stop279832" stop-opacity="1" stop-color="#000000" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient gradientTransform="rotate(-30)" spreadMethod="pad" y2="30%" x2="-10%" y1="120%" x1="30%" id="3d_gradient3-logo-e63b7e86-b177-47f3-a90e-62fe9c05eff8">
+      <stop id="stop279835" stop-opacity="1" stop-color="#ffffff" offset="0%"></stop>
+      <stop id="stop279837" stop-opacity="1" stop-color="#cccccc" offset="50%"></stop>
+      <stop id="stop279839" stop-opacity="1" stop-color="#000000" offset="100%"></stop>
+    </linearGradient>
+    <g id="logo-group">
+      <image xlink:href="" id="container" x="272" y="144" width="480" height="480" style="display: none;" transform="translate(0 0)"></image>
+      <g id="logo-center" transform="translate(-1.1368683772161603e-13 0)">
+        <image xlink:href="" id="icon_container" style="display: none;" x="0" y="0"></image>
+        <g id="slogan" style="font-style:normal;font-weight:400;font-size:32px;line-height:1;font-family:Quicksand;font-variant-ligatures:none;text-align:center;text-anchor:middle" transform="translate(0 0)"></g>
+        <g id="title" style="font-style:normal;font-weight:300;font-size:72px;line-height:1;font-family:'Montserrat Light Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" transform="translate(0 0)">
+          <path id="path279858" style="font-style:normal;font-weight:300;font-size:72px;line-height:1;font-family:'Montserrat Light Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 295.75869,-2.952 c 3.96,2.232 8.424,3.312 13.392,3.312 3.6,0 6.912,-0.576 10.008,-1.8 3.096,-1.152 5.76,-2.952 7.92,-5.256 l -2.304,-2.376 c -4.104,4.032 -9.288,6.048 -15.48,6.048 -4.248,0 -8.064,-0.936 -11.52,-2.88 -3.456,-1.872 -6.192,-4.536 -8.136,-7.92 -2.016,-3.384 -2.952,-7.2 -2.952,-11.376 0,-4.176 0.936,-7.92 2.952,-11.304 1.944,-3.384 4.68,-6.048 8.136,-7.992 3.456,-1.872 7.272,-2.88 11.52,-2.88 6.264,0 11.448,2.016 15.48,5.976 l 2.304,-2.376 c -2.16,-2.304 -4.824,-4.032 -7.848,-5.184 -3.096,-1.152 -6.48,-1.8 -10.08,-1.8 -4.968,0 -9.432,1.152 -13.392,3.312 -3.96,2.232 -7.056,5.256 -9.36,9.144 -2.304,3.888 -3.384,8.28 -3.384,13.104 0,4.896 1.08,9.216 3.384,13.104 2.304,3.888 5.4,6.984 9.36,9.144 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#461311" stroke="#461311" transform="translate(0 308.44) translate(211.18906499999997 50) scale(1) translate(-283.01469 50.76)"></path>
+          <path id="path279860" style="font-style:normal;font-weight:300;font-size:72px;line-height:1;font-family:'Montserrat Light Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 366.01606,-17.64 c 3.744,-1.08 6.696,-2.952 8.712,-5.688 2.016,-2.736 3.096,-6.048 3.096,-10.08 0,-5.256 -1.8,-9.432 -5.4,-12.456 -3.6,-3.024 -8.568,-4.536 -14.904,-4.536 h -18.072 v 3.312 h 18.072 c 5.328,0 9.432,1.224 12.312,3.6 2.808,2.376 4.248,5.76 4.248,10.08 0,4.392 -1.44,7.776 -4.248,10.152 -2.88,2.376 -6.984,3.528 -12.312,3.528 h -18.072 V 0 h 3.672 v -16.488 h 14.4 c 1.44,0 3.096,-0.072 4.896,-0.36 L 374.44006,0 h 4.176 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#591515" stroke="#591515" transform="translate(0 308.44) translate(285.622435 50.36) scale(1) translate(-339.44806 50.4)"></path>
+          <path id="path279862" style="font-style:normal;font-weight:300;font-size:72px;line-height:1;font-family:'Montserrat Light Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 406.18756,-17.352 20.304,-33.048 h -3.816 l -18.216,29.664 -18.216,-29.664 h -4.032 l 20.304,33.048 V 0 h 3.672 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#6c1819" stroke="#6c1819" transform="translate(0 308.44) translate(346.385935 50.36) scale(1) translate(-382.21156 50.4)"></path>
+          <path id="path279864" style="font-style:normal;font-weight:300;font-size:72px;line-height:1;font-family:'Montserrat Light Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 467.34594,-45.864 c -3.6,-3.024 -8.568,-4.536 -14.904,-4.536 h -18.072 v 3.312 h 18.072 c 5.328,0 9.432,1.224 12.312,3.6 2.808,2.376 4.248,5.76 4.248,10.08 0,4.392 -1.44,7.776 -4.248,10.08 -2.88,2.376 -6.984,3.528 -12.312,3.528 h -18.072 V 0 h 3.672 v -16.488 h 14.4 c 6.336,0 11.304,-1.44 14.904,-4.464 3.6,-3.024 5.4,-7.128 5.4,-12.456 0,-5.256 -1.8,-9.432 -5.4,-12.456 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#7e1a1d" stroke="#7e1a1d" transform="translate(0 308.44) translate(416.5443149999999 50.36) scale(1) translate(-434.36994 50.4)"></path>
+          <path id="path279866" style="font-style:normal;font-weight:300;font-size:72px;line-height:1;font-family:'Montserrat Light Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="M 493.09606,-47.088 V 0 h 3.672 v -47.088 h 18.144 V -50.4 h -39.96 v 3.312 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#911d21" stroke="#911d21" transform="translate(0 308.44) translate(475.12643499999996 50.36) scale(1) translate(-474.95206 50.4)"></path>
+          <path id="path279868" style="font-style:normal;font-weight:300;font-size:72px;line-height:1;font-family:'Montserrat Light Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 531.23694,-2.952 c 3.96,2.232 8.424,3.312 13.392,3.312 4.896,0 9.36,-1.08 13.392,-3.312 3.96,-2.16 7.056,-5.256 9.36,-9.144 2.304,-3.888 3.456,-8.208 3.456,-13.104 0,-4.824 -1.152,-9.216 -3.456,-13.104 -2.304,-3.888 -5.4,-6.912 -9.36,-9.144 -4.032,-2.16 -8.496,-3.312 -13.392,-3.312 -4.968,0 -9.432,1.152 -13.392,3.384 -4.032,2.232 -7.128,5.256 -9.432,9.144 -2.304,3.888 -3.384,8.28 -3.384,13.032 0,4.824 1.08,9.144 3.384,13.032 2.304,3.888 5.4,6.984 9.432,9.216 z m 24.84,-2.952 c -3.456,1.944 -7.272,2.88 -11.448,2.88 -4.248,0 -8.064,-0.936 -11.52,-2.88 -3.456,-1.872 -6.12,-4.536 -8.064,-7.92 -2.016,-3.384 -2.952,-7.2 -2.952,-11.376 0,-4.176 0.936,-7.92 2.952,-11.304 1.944,-3.384 4.608,-6.048 8.064,-7.992 3.456,-1.872 7.272,-2.88 11.52,-2.88 4.176,0 7.992,1.008 11.448,2.88 3.384,1.944 6.048,4.608 8.064,7.992 1.944,3.384 2.952,7.128 2.952,11.304 0,4.176 -1.008,7.992 -2.952,11.376 -2.016,3.384 -4.68,6.048 -8.064,7.92 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#a41f25" stroke="#a41f25" transform="translate(0 308.44) translate(536.5953149999999 50) scale(1) translate(-518.42094 50.76)"></path>
+          <path id="path279870" style="font-style:normal;font-weight:300;font-size:72px;line-height:1;font-family:'Montserrat Light Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="M 611.78356,-47.088 V 0 h 3.672 v -47.088 h 18.144 V -50.4 h -39.96 v 3.312 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#b72129" stroke="#b72129" transform="translate(0 308.44) translate(629.813935 50.36) scale(1) translate(-593.63956 50.4)"></path>
+          <path id="path279872" style="font-style:normal;font-weight:300;font-size:72px;line-height:1;font-family:'Montserrat Light Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 649.92444,-2.952 c 3.96,2.232 8.424,3.312 13.392,3.312 4.896,0 9.36,-1.08 13.392,-3.312 3.96,-2.16 7.056,-5.256 9.36,-9.144 2.304,-3.888 3.456,-8.208 3.456,-13.104 0,-4.824 -1.152,-9.216 -3.456,-13.104 -2.304,-3.888 -5.4,-6.912 -9.36,-9.144 -4.032,-2.16 -8.496,-3.312 -13.392,-3.312 -4.968,0 -9.432,1.152 -13.392,3.384 -4.032,2.232 -7.128,5.256 -9.432,9.144 -2.304,3.888 -3.384,8.28 -3.384,13.032 0,4.824 1.08,9.144 3.384,13.032 2.304,3.888 5.4,6.984 9.432,9.216 z m 24.84,-2.952 c -3.456,1.944 -7.272,2.88 -11.448,2.88 -4.248,0 -8.064,-0.936 -11.52,-2.88 -3.456,-1.872 -6.12,-4.536 -8.064,-7.92 -2.016,-3.384 -2.952,-7.2 -2.952,-11.376 0,-4.176 0.936,-7.92 2.952,-11.304 1.944,-3.384 4.608,-6.048 8.064,-7.992 3.456,-1.872 7.272,-2.88 11.52,-2.88 4.176,0 7.992,1.008 11.448,2.88 3.384,1.944 6.048,4.608 8.064,7.992 1.944,3.384 2.952,7.128 2.952,11.304 0,4.176 -1.008,7.992 -2.952,11.376 -2.016,3.384 -4.68,6.048 -8.064,7.92 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#c9242d" stroke="#c9242d" transform="translate(0 308.44) translate(691.282815 50) scale(1) translate(-637.10844 50.76)"></path>
+          <path id="path279874" style="font-style:normal;font-weight:300;font-size:72px;line-height:1;font-family:'Montserrat Light Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 735.23656,-45.864 c -3.6,-3.024 -8.568,-4.536 -14.904,-4.536 h -18.072 v 3.312 h 18.072 c 5.328,0 9.432,1.224 12.312,3.6 2.808,2.376 4.248,5.76 4.248,10.08 0,4.392 -1.44,7.776 -4.248,10.08 -2.88,2.376 -6.984,3.528 -12.312,3.528 h -18.072 V 0 h 3.672 v -16.488 h 14.4 c 6.336,0 11.304,-1.44 14.904,-4.464 3.6,-3.024 5.4,-7.128 5.4,-12.456 0,-5.256 -1.8,-9.432 -5.4,-12.456 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#dc2631" stroke="#dc2631" transform="translate(0 308.44) translate(774.4349350000001 50.36) scale(1) translate(-702.26056 50.4)"></path>
+        </g>
+        <image xlink:href="" id="icon" style="display: none;" x="0" y="0"></image>
+      </g>
+    </g>
+  </svg> -->
